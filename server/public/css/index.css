@@ -42,22 +42,25 @@ header {
 }
 
 .logout-button {
-	color: #e6e6e6;
-	font-size: 18px;
-	padding-left: 22px;
-	padding-right: 22px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: none;
-	border-radius: 4px;
-	background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
-	cursor: pointer;
-	box-shadow: 0px 0px 7px 0px #ff4e50, 0px 0px 7px 0px #f9d423;
+    color: rgba(255, 255, 255, 0.801);
+    margin: 0%;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-style: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(254,108,1,1) 0%, rgba(230,241,14,1) 100%);
+	box-shadow: 0px 0px 10px 0px rgba(230, 241, 14, 1),0px 0px 10px 0px rgba(254, 108, 1, 1)
 }
+
 .logout-button:hover {
 	color: #fff;
-	transition: all 1ms cubic-bezier(0.57, 0.47, 0.6, 0.77);
-	box-shadow: 0px 0px 9px 0px #ff4e50, 0px 0px 9px 0px #f9d423;
+	transition: all .14s ease-in-out;
+	box-shadow: 0px 0px 20px 0px rgba(230, 241, 14, 1),0px 0px 10px 0px rgba(254, 108, 1, 1)
 }
 
 .search-field {
