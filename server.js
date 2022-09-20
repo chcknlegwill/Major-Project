@@ -14,13 +14,12 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "/server/public/")));
 
 /* app.get('^/$|/index(.html)?', (req, res) => {
-    res.sendFile("./html/index.html", { root: __dirname });
+    res.sendFile("./html/index.html", { root: __dirname });\
 }); */
 
 app.get("/", (req, res) => {
-    res.status(200).sendFile("./server/public/html/index.html", { root: __dirname})
+    res.status(200).sendFile("./server/public/html/index.html ", { root: __dirname})
 });
-
 
 app.get("/*", (req, res) => {
     res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
