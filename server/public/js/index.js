@@ -14,14 +14,4 @@ menuBtn.addEventListener("click", () => {
 	}
 });
 
-function openNav() {
-	document.getElementById("sidenav").style.width = "250px";
-	document.getElementsByClassName(".sidenav-container").style.marginLeft = "250px"
-}
-
-function closeNav() {
-	document.getElementById("sidenav").style.width = "0px";
-	document.getElementsByClassName(".sidenav-container").style.marginLeft = "0px"
-}
-
 console.log("/public/js/index.js has ran correctly ;)")
