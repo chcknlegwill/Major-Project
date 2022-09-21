@@ -11,14 +11,12 @@ body {
 }
 
 header-container {
-	z-index: 2;
 	padding-left: 20px;
 	padding-right: 20px;
 	flex-grow: 1;
 }
 
 header {
-	z-index: 1;
 	display: flex;
 	position: sticky;
 	top: 0;
@@ -27,7 +25,6 @@ header {
 	right: 0;
 	width: 100%;
 	flex-direction: row;
-	z-index: 101;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 6px;
 }
 
@@ -177,17 +174,8 @@ header {
 	length: 100%;
 }
 
-.sidenav-container {
-	display: flex;
-	justify-content: flex-end;
-}
 
-.sidenav {
-	display: flex;
-	width: 10px;
-	height: 10px;
-	background: red;
-}
+/* need to add a sidebar when the main part of the project is done - still a long way to go.*/
 /* this is where the main content starts */
 
 content {

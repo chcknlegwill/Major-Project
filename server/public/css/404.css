@@ -61,10 +61,6 @@ p {
     color: rgba(255, 255, 255, 0.801);
 }
 
-.logout-button {
-    display: flex;
-}
-
 button {
     color: rgba(255, 255, 255, 0.801);
     margin: 0%;
