@@ -21,11 +21,11 @@ app.get("/", (req, res) => {
     res.status(200).sendFile("./server/public/html/index.html", { root: __dirname})
 });
 
-/*
+
 app.get("/*", (req, res) => {
     res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
 }); 
-*/
+
 // starting api usage here - I will need to server the main page for this as the 404 page is not made for it.
 // note to self -> add middleware
 
