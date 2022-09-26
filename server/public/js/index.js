@@ -14,4 +14,8 @@ menuBtn.addEventListener("click", () => {
 	}
 });
 
+const menuBtnOpen = document.getElementById(".menu-btn open")
+
+//add w3schools code here because it is much easier than continuing from scratch.
+
 console.log("/public/js/index.js has ran correctly ;)")
