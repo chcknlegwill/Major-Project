@@ -9,11 +9,16 @@ body {
     height: 100vh;
 }
 
-content {
+.content {
     display: flex;
+    height: 100%;
 }
 
-.login::before {
+.login-master    {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.288);
+}
+
+.login-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -21,15 +26,23 @@ content {
     right: 0;
     height: 2px;
     background: linear-gradient(90deg, #FF4E50 0%,  #F9D423 100%);
+
 }
 
-.login{
+.login-container {
     display: flex;
-    padding:  20px 40px;
+    padding: 20vh 10vh;
     position: relative;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
+    flex-direction: column;
+}
+
+.login {
+    content: "sdsdsd";
+    display: flex;
+}
+
+input-cont {
+    display: flex;
 }
 
 h1 {
@@ -56,13 +69,13 @@ button {
     margin: 0%;
     cursor: pointer;
     font-size: 2vh;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     border: none;
     border-style: none;
-    border-radius: 3px;
+    border-radius: 6px;
     background: linear-gradient(90deg, rgba(254,108,1,1) 0%, rgba(230,241,14,1) 100%);
     box-shadow: 0px 0px 20px 0px #fe6c01 ,0px 0px 20px 0px #e6f10e ;
 }

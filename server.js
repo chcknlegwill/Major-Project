@@ -29,9 +29,9 @@ app.get("/*", (req, res) => {
 
 
 
-// root: __dirname =   /home/chcknlegwill/Major-Project/server/public/html
+//  __dirname =   /home/chcknlegwill/Major-Project/server/public/html
 
-console.log(__dirname);
+//console.log(__dirname);
 app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
 
 // cinema.bond v 0.1.0 is now live!
