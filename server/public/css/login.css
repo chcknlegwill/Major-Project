@@ -1,140 +1,158 @@
 * {
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 20px;
-}
-
-body {
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  body {
     background-color: #202124ed;
     margin: 0;
-    height: 100vh;
-}
-
-.content {
-    display: flex;
     height: 100%;
-}
-
-.login-master    {
+  }
+  
+  .content {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-master {
+    display: flex;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.288);
-}
-
-.login-container::before {
-    content: '';
+  }
+  
+  .login-container::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #FF4E50 0%,  #F9D423 100%);
-
-}
-
-.login-container {
+    background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+  }
+  
+  .login-container {
     display: flex;
-    padding: 20vh 10vh;
+    /* padding: 14vh 10vh; */
     position: relative;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
-
-.login {
-    content: "sdsdsd";
-    display: flex;
-}
-
-input-cont {
-    display: flex;
-}
-
-h1 {
-    margin: 0;
-    font-size: 8vh;
-    background: linear-gradient(90deg, rgba(254,108,1,1) 0%, rgba(230,241,14,1) 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    text-shadow: 0px 0px 10vh rgba(254, 196, 6, 0.8);
-}
-
-p {
+    padding: 40px;
+    gap: 15px;
+  }
+  
+  .username-cont {
+    border: none;
+  }
+  
+  .password-cont {
+    border: none;
+  }
+  
+  .username-input {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #383a3d;
+    color: white;
+  }
+  
+  .password-input {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #383a3d;
+    color: white;
+  }
+  
+  p {
     margin: 0;
     font-weight: 600;
     font-size: 2vh;
     color: rgba(255, 255, 255, 0.801);
-}
-
-button {
+  }
+  
+  button {
     color: rgba(255, 255, 255, 0.801);
     margin: 0%;
     cursor: pointer;
-    font-size: 2vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    font-size: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: none;
     border-style: none;
     border-radius: 6px;
-    background: linear-gradient(90deg, rgba(254,108,1,1) 0%, rgba(230,241,14,1) 100%);
-    box-shadow: 0px 0px 20px 0px #fe6c01 ,0px 0px 20px 0px #e6f10e ;
-}
-
-
-button:hover {
-    transition: all .14s ease-in-out;
-    box-shadow: 0px 0px 22px 0px #fe6c01 ,0px 0px 22px 0px #e6f10e ;
+    background: linear-gradient(
+      90deg,
+      rgba(254, 108, 1, 1) 0%,
+      rgba(230, 241, 14, 1) 100%
+    );
+    box-shadow: 0px 0px 12px 0px #fe6c01, 0px 0px 12px 0px #e6f10e;
+  }
+  
+  button:hover {
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0px 0px 14px 0px #fe6c01, 0px 0px 14px 0px #e6f10e;
     color: #fff;
-}
-
-footer {
+  }
+  
+  output {
+    color: #b70000;
+  }
+  
+  footer {
     position: relative;
     color: #fff;
     bottom: 0;
     width: 100%;
     text-align: center;
-}
-
-footer::before {
-    content: '';
+  }
+  
+  footer::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #FF4E50 0%,  #F9D423 100%);
-}
-
-.footer-content {
+    background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+  }
+  
+  .footer-content {
     display: flex;
     padding: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- |======================= USEFULL SCRAPS... =======================|
-
-    box-shadow: 0px 0px 20px 0px #fe6c01 ,0px 0px 20px 0px #e6f10e ;
-
-
-    box-shadow: 0px 2px 30px 2px #fe6c01 ,0px -2px 30px 2px #e6f10e ;
-box-shadow:-10px 2px 30px 2px #fe6c01 ,10px -2px 30px 2px #e6f10e ;
-
-
-
-
- |======================= NO MORE SCRAPS :( =======================|
-*/
+  }
+  
+  /*
+   |======================= USEFULL SCRAPS... =======================|
+      box-shadow: 0px 0px 20px 0px #fe6c01 ,0px 0px 20px 0px #e6f10e ;
+      box-shadow: 0px 2px 30px 2px #fe6c01 ,0px -2px 30px 2px #e6f10e ;
+  box-shadow:-10px 2px 30px 2px #fe6c01 ,10px -2px 30px 2px #e6f10e ;
+  
+  
+  |======================HTML SCRAPS=================================|
+  <div class="container-1">
+              <div class="container-2">
+                  <login>
+                      <div class="username-cont">
+                          <input id="username" class="username-input" type="text" placeholder="username" name="username">
+                      </div>
+                      <div class="password-cont">
+                          <input id="password" class="password-input" type="text" placeholder="password" name="password">
+                      </div>
+                  </login>
+              </div>
+          </div>
+  </div>
+  
+  
+   |======================= NO MORE SCRAPS :( =======================|
+  */
+  
