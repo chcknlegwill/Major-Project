@@ -17,11 +17,10 @@ app.use(express.static(path.join(__dirname, "/")));
     res.sendFile("./html/index.html", { root: __dirname });\
 }); */
 
-
 app.get("/", (req, res) => {
     res.status(200).sendFile("./server/public/html/login.html", { root: __dirname})
 });
- 
+
 app.get("/*", (req, res) => {
     res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
 });  // This picks up every request unless explicitly served e.g. "/"
@@ -34,5 +33,3 @@ app.get("/*", (req, res) => {
 //console.log(__dirname);
 app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
 
-// cinema.bond v 0.1.0 is now live!
-// ^ it was live for a few weeks but this means that I am also re-starting development on this from today
