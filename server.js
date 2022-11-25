@@ -22,10 +22,13 @@ app.get("/", (req, res) => {
     res.status(200).sendFile("./server/public/html/login.html", { root: __dirname})
 });
  
+
+/*
 app.get("/*", (req, res) => {
     res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
 });  // This picks up every request unless explicitly served e.g. "/"
-
+*/
+// In order to make sure the login page is served correctly I need to comment out the above code.
 
 
 
