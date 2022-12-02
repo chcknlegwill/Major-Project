@@ -4,8 +4,9 @@ const out = document.getElementById("out");
 
 
 
-function btnRedirect (btn) {
-  window.location.href="https://cinema.bond/";
+function btnRedirect(btn) {
+	window.location.href = "https://cinema.bond/";
 };
 
 //this should redirect users to https://cinema.bond/
+//was working on codepen

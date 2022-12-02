@@ -4,7 +4,7 @@
   "description": "A website that will torrent and track movies",
   "main": "server.js",
   "scripts": {
-    "test": "mocha"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
