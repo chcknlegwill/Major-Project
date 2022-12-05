@@ -18,6 +18,8 @@ app.get("/login", (req, res) => {
 }); //serves users login page 
 
 
+
+
 app.get("/*", (req, res) => {
 	res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
 
@@ -28,4 +30,3 @@ app.get("/*", (req, res) => {
 
 console.log(__dirname);
 app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
-
