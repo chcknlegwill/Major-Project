@@ -1,0 +1,148 @@
+* {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #202124ed;
+  margin: 0;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-master {
+  display: flex;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.288);
+}
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+}
+
+.login-container {
+  display: flex;
+  /* padding: 14vh 10vh; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 15px;
+}
+
+.username-cont {
+  border: none;
+}
+
+.password-cont {
+  border: none;
+}
+
+.username-input,
+.password-input {
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #383a3d;
+  color: white;
+}
+
+.password-input:hover,
+.password-input:hover {
+  background-color: #383a3d;
+}
+
+button {
+  color: rgba(255, 255, 255, 0.801);
+  margin: 0%;
+  cursor: pointer;
+  font-size: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-style: none;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 108, 1, 1) 0%,
+    rgba(230, 241, 14, 1) 100%
+  );
+  box-shadow: 0px 0px 12px 0px #fe6c01, 0px 0px 12px 0px #e6f10e;
+}
+
+button:hover {
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 0px 14px 0px #fe6c01, 0px 0px 14px 0px #e6f10e;
+  color: #fff;
+}
+
+output {
+  color: #b70000;
+}
+
+footer {
+  position: relative;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+}
+
+.footer-content {
+  display: flex;
+  padding: 10px;
+}
+
+/*
+ |======================= USEFULL SCRAPS... =======================|
+    box-shadow: 0px 0px 20px 0px #fe6c01 ,0px 0px 20px 0px #e6f10e ;
+    box-shadow: 0px 2px 30px 2px #fe6c01 ,0px -2px 30px 2px #e6f10e ;
+box-shadow:-10px 2px 30px 2px #fe6c01 ,10px -2px 30px 2px #e6f10e ;
+
+
+|======================HTML SCRAPS=================================|
+<div class="container-1">
+            <div class="container-2">
+                <login>
+                    <div class="username-cont">
+                        <input id="username" class="username-input" type="text" placeholder="username" name="username">
+                    </div>
+                    <div class="password-cont">
+                        <input id="password" class="password-input" type="text" placeholder="password" name="password">
+                    </div>
+                </login>
+            </div>
+        </div>
+</div>
+
+
+ |======================= NO MORE SCRAPS :( =======================|
+*/

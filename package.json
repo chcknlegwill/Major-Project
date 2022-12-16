@@ -1,0 +1,31 @@
+{
+  "name": "major-project",
+  "version": "0.0.1",
+  "description": "A website that will torrent and track movies",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willthepillow/Major-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willthepillow/Major-Project/issues"
+  },
+  "homepage": "https://github.com/willthepillow/Major-Project#readme",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "express": "^4.18.1",
+    "express-winston": "^4.2.0",
+    "package-lock.json": "^1.0.0",
+    "package.json": "^0.0.0",
+    "webtorrent": "^1.8.29",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
