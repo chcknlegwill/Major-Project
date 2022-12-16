@@ -14,12 +14,13 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "/")));
 
-app.get("/*", (req, res) => {
+/*app.get("/*", (req, res) => {
 	res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
 
 });
+*/
 
-app.get("/login", (req, res) => {
+app.get("/*", (req, res) => {
 	res.status(200).sendFile("./server/public/html/login.html")
 });
 console.log(__dirname);
