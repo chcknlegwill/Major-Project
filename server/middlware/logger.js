@@ -4,7 +4,8 @@
 
 //using this npm module called "winston" for logging
 
-/* // below is default code from the winston docs
+// below is default code from the winston docs
+
 app.use(expressWinston.logger({
 	transports: [
 		new winston.transports.Console()
@@ -21,15 +22,3 @@ app.use(expressWinston.logger({
 }));
 
 app.use(router);
-
-*/
-const winston = require("winston");
-expressWinston = require("express-winston");
-
-const logger = winston.createLogger({
-	level: "debug",
-	format: winston.fomat.json(),
-	transports: [new winston.transports.Console()],
-});
-
-module.exports = logger;

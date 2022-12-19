@@ -2,7 +2,7 @@ const { th } = require("date-fns/locale");
 const express = require("express");
 const app = express();
 const path = require("path");
-const logger = require("/")
+//const logger = require("/")
 
 //This is to import npm (Node Package Manager) Modules such as date-fns to  
 
@@ -14,19 +14,23 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "/")));
 
-/*app.get("/*", (req, res) => {
+
+app.get("/*", (req, res) => {
 	res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
 
 });
+
+
+/*
+app.get("/*", (req, res) => {
+	res.status(200).sendFile("./server/public/html/login.html", { root: __dirname });
+});
 */
 
-app.get("/*", (req, res) => {
-	res.status(200).sendFile("./server/public/html/login.html")
-});
 console.log(__dirname);
-app.listen(PORT, () =>  {
+app.listen(PORT, () => {
 	console.log(`Server running on port: ${PORT}`);
-	
+
 });
 
 
