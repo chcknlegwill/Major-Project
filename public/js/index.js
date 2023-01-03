@@ -1,3 +1,4 @@
+/*
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
 const sideNavCont = document.querySelector(".sidenav-container");
@@ -14,8 +15,12 @@ menuBtn.addEventListener("click", () => {
 	}
 });
 
-const menuBtnOpen = document.getElementById(".menu-btn open")
-
-//add w3schools code here because it is much easier than continuing from scratch.
+function openMenu() {
+	document.getElementById("sidebar").style.display = "block";
+}
+function closeMenu() {
+	document.getElementById("sidebar").style.display = "none";
+}
 
 console.log("/public/js/index.js has ran correctly ;)")
+*/

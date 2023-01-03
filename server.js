@@ -1,12 +1,14 @@
-const { th } = require("date-fns/locale");
 const express = require("express");
-const app = express();
+const app = express()
 const path = require("path");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+
+//custom logger below
+
+
 //const logger = require("/")
-
-//This is to import npm (Node Package Manager) Modules such as date-fns to  
-
-//import middleware below
+app.use(logger);
 
 const PORT = process.env.PORT || 3500;
 
@@ -14,18 +16,21 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "/")));
 
+//users will have to login first, therefore this redirect is here,
+//it will be a if, else statement soon because of authentication
+app.get("/", (req, res) => {
+    res.status(301).redirect("/login");
+});
 
-app.get("/*", (req, res) => {
-	res.status(404).sendFile("./server/public/html/404.html", { root: __dirname })
-
+app.get("/login", (req, res) => {
+    res.status(200).sendFile("./public/html/login.html", { root: __dirname })
 });
 
 
-/*
-app.get("/*", (req, res) => {
-	res.status(200).sendFile("./server/public/html/login.html", { root: __dirname });
-});
-*/
+//404 goes at the end of the requests.
+app.all("*", (req, res) => {
+    res.status(404).sendFile("./public/html/404.html", { root: __dirname })
+})
 
 console.log(__dirname);
 app.listen(PORT, () => {

@@ -2,7 +2,7 @@ const output = document.getElementById("output");
 const errorMsg = "Incorrect credentials, try again";
 
 function showErrorMsg(output) {
-  output = document.getElementById("output").append(errorMsg);
+  output = document.getElementBy("output").append(errorMsg);
 }
 
 //showErrorMsg();
