@@ -1,8 +1,8 @@
-const { format } = require  ("date-fns");
-const { v4: uuid } = require("uuid"); //imports specific version of uuid
+const { format } = require  ("date-fns"); 
+const { v4: uuid } = require("uuid"); //imports specific version (v4) of uuid
 
 const fs = require("fs");
-const fsPromises = require("fs").promises;
+const fsPromises = require("fs").promises; //have to import fsPromises because the dir may not exists
 const path = require("path");
 
 
@@ -24,7 +24,8 @@ const logEvents = async (message) => {
 //         await fsPromises.appendFile(path.join(__dirname, "..", "logs", "eventLog.txt"), logItem);
 // above is a scrap incase this doesnt work -> only temporary
 
-
+//I am seperating this into two functions becuse it improves readability in both server.js and this file
+//This means that the code can be re-used for anything that needs to be logged on the server e.g. logins
 const logger = ((req, res, next) => {
     logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`);
     //console.log(`${req.method} ${req.path}`);
