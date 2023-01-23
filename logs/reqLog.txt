@@ -3,3 +3,11 @@
 20230105	17:26:16	effac531-ea90-4bb0-a9f3-686014ed5f4d	GET	undefined	/public/css/login.css
 20230105	17:29:00	8316483d-d19a-4c00-8529-e7a55c9f3c3b	GET	undefined	/login
 20230105	17:29:00	58cf7bb7-cd34-477d-8003-c726e048a326	GET	undefined	/public/css/login.css
+20230123	18:19:30	576ce7f2-fef7-4099-be6d-65843844cf70	GET	undefined	/
+20230123	18:19:30	bd53df96-5ba0-470c-bca2-226c0120c88c	GET	undefined	/login
+20230123	18:19:30	ae9340c2-a4cb-4ad9-902b-7f59b56940a3	GET	undefined	/public/css/login.css
+20230123	18:19:30	2e3d392b-be19-4f79-9854-a90ba8514ca5	GET	undefined	/public/img/cinema.png
+20230123	18:36:18	56af2978-259a-402d-a1ed-f51ecd348c2f	GET	undefined	/
+20230123	18:36:18	d614cb67-2a61-4cc5-91bf-93086dbb3a6b	GET	undefined	/login
+20230123	18:36:18	af691d57-4bd6-4681-b36b-74dca2e7a0e6	GET	undefined	/public/css/login.css
+20230123	18:36:18	8c6a815c-a2dc-4e72-811a-9f4538a005c8	GET	undefined	/public/img/cinema.png
