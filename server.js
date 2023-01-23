@@ -2,7 +2,10 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const { logger } = require("./middleware/logEvents");
+<<<<<<< HEAD
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
+=======
+>>>>>>> live
 
 app.use(logger);
 //^ this is much more easily read than importing the 
