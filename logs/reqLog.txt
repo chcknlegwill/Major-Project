@@ -14,3 +14,10 @@
 20230106	09:30:41	cb2abd4e-d662-4fa7-8f8f-865a820d991e	OPTIONS	undefined	*
 20230106	09:30:44	43808f93-93e9-4925-a8c1-f41fc1cc3830	OPTIONS	undefined	*
 20230106	09:30:47	9c6cfa25-81fe-417b-ad96-640d4a3b8c2d	OPTIONS	undefined	*
+20230123	18:07:45	986b4e9e-b86a-47af-affc-59e34907238c	GET	undefined	/
+20230123	18:07:45	8b28bccd-4867-4525-a3ec-e25883ede97c	GET	undefined	/login
+20230123	18:07:45	1ab37676-656d-4d65-b7a3-ac46224e1f8b	GET	undefined	/public/css/login.css
+20230123	18:07:54	8b8bd5d5-db81-4ef8-ba26-35b4fa077ae2	GET	undefined	/
+20230123	18:07:54	82b73c23-fbc8-496a-8343-2a01683ca830	GET	undefined	/login
+20230123	18:07:54	d0289d91-f407-40b5-932b-5f4d5377c543	GET	undefined	/public/css/login.css
+20230123	18:07:54	15fee35c-ff7b-47c1-9a95-a2aaddffbc28	GET	undefined	/public/img/cinema.png

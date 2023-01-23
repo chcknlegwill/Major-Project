@@ -8,13 +8,15 @@ const connection = mysql.createConnection({
 	database: "my_db"
 });
 
+
+module.exports = { connection }
+
 connection.connect();
-
-
 
 //add query code l8r
 
 connection.end();
+
 
 //need to either add this to main file or export a function that already has a connection.
 
