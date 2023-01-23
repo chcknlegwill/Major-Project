@@ -2,10 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const { logger } = require("./middleware/logEvents");
-<<<<<<< HEAD
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
-=======
->>>>>>> live
 
 app.use(logger);
 //^ this is much more easily read than importing the 
@@ -22,13 +19,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/login", (req, res) => {
-    res.status(200).sendFile("./public/html/login.html", { root: __dirname })
+    res.status(200).sendFile("./public/html/login.html", { root: __dirname });
 });
 
 
 //404 goes at the end of all the other requests.
 app.all("*", (req, res) => {
-    res.status(404).sendFile("./public/html/404.html", { root: __dirname })
+    res.status(404).sendFile("./public/html/404.html", { root: __dirname });
 });
 
 

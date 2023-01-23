@@ -29,3 +29,6 @@
 20230105	17:29:00	8316483d-d19a-4c00-8529-e7a55c9f3c3b	GET	undefined	/login
 20230105	17:29:00	58cf7bb7-cd34-477d-8003-c726e048a326	GET	undefined	/public/css/login.css
 >>>>>>> live
+20230123	18:51:11	388c1d81-0708-4f0c-8064-334d6d2015c3	GET	undefined	/
+20230123	18:51:11	0e074583-8447-4555-a432-8e349e877ef4	GET	undefined	/login
+20230123	18:51:12	ef73482d-fc97-488b-b4b7-6e26a22f6d01	GET	undefined	/public/css/login.css
