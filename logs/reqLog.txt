@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+20230106	09:20:46	3764e65e-2dc5-4edf-9606-5e48341c87b1	GET	undefined	/
+20230106	09:20:46	79bbffa9-f1b7-4756-b86d-b7ec84f0d2c0	GET	undefined	/login
+20230106	09:20:47	8fb52875-8fbd-442d-9984-c002838c443c	GET	undefined	/public/css/login.css
+20230106	09:27:04	911b8440-43b3-4a9f-80ec-dc111aa7232f	GET	undefined	/
+20230106	09:27:04	ff449df1-0c29-4a53-afd5-dc629f72f180	GET	undefined	/login
+20230106	09:27:04	1e22837f-a4d0-4c58-8bb2-0821d78f9006	GET	undefined	/public/css/login.css
+20230106	09:30:21	d0670bff-51bb-4df3-8838-a60cf7fdd30d	GET	undefined	/
+20230106	09:30:21	67b1651a-1a13-4908-a836-e4b464ef82ea	GET	undefined	/
+20230106	09:30:22	d5c118de-019e-4af7-92bb-170056c97664	GET	undefined	/login
+20230106	09:30:22	0401aedb-97b3-416d-a5f7-80113b0458f4	GET	undefined	/public/css/login.css
+20230106	09:30:30	fe63d1af-0a4f-4d1b-ba90-ae7275aa367c	OPTIONS	undefined	*
+20230106	09:30:32	2ad0eaf1-faa0-4ce3-853c-47305ba6f657	OPTIONS	undefined	*
+20230106	09:30:38	068d1dd4-f276-4af7-b5ce-76ff722d6b3a	OPTIONS	undefined	*
+20230106	09:30:41	cb2abd4e-d662-4fa7-8f8f-865a820d991e	OPTIONS	undefined	*
+20230106	09:30:44	43808f93-93e9-4925-a8c1-f41fc1cc3830	OPTIONS	undefined	*
+20230106	09:30:47	9c6cfa25-81fe-417b-ad96-640d4a3b8c2d	OPTIONS	undefined	*
+20230123	18:07:45	986b4e9e-b86a-47af-affc-59e34907238c	GET	undefined	/
+20230123	18:07:45	8b28bccd-4867-4525-a3ec-e25883ede97c	GET	undefined	/login
+20230123	18:07:45	1ab37676-656d-4d65-b7a3-ac46224e1f8b	GET	undefined	/public/css/login.css
+20230123	18:07:54	8b8bd5d5-db81-4ef8-ba26-35b4fa077ae2	GET	undefined	/
+20230123	18:07:54	82b73c23-fbc8-496a-8343-2a01683ca830	GET	undefined	/login
+20230123	18:07:54	d0289d91-f407-40b5-932b-5f4d5377c543	GET	undefined	/public/css/login.css
+20230123	18:07:54	15fee35c-ff7b-47c1-9a95-a2aaddffbc28	GET	undefined	/public/img/cinema.png
+=======
+20230105	17:26:16	da15a449-d88a-41e9-8a89-b75bcae02f00	GET	undefined	/
+20230105	17:26:16	8162693d-1e11-4c62-8927-c956374d376a	GET	undefined	/login
+20230105	17:26:16	effac531-ea90-4bb0-a9f3-686014ed5f4d	GET	undefined	/public/css/login.css
+20230105	17:29:00	8316483d-d19a-4c00-8529-e7a55c9f3c3b	GET	undefined	/login
+20230105	17:29:00	58cf7bb7-cd34-477d-8003-c726e048a326	GET	undefined	/public/css/login.css
+>>>>>>> live
+20230123	18:51:11	388c1d81-0708-4f0c-8064-334d6d2015c3	GET	undefined	/
+20230123	18:51:11	0e074583-8447-4555-a432-8e349e877ef4	GET	undefined	/login
+20230123	18:51:12	ef73482d-fc97-488b-b4b7-6e26a22f6d01	GET	undefined	/public/css/login.css
