@@ -1,11 +1,11 @@
-const express = require("express");
+reconst express = require("express");
 const app = express();
 const path = require("path");
 const cors = require("cors");
 const corsOptions = require("./.config/corsOptions");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
-const exp = require("constraints");
+//const exp = require("constraints");
 const PORT = process.env.PORT || 3500;
 
 //use custom logger
@@ -34,7 +34,8 @@ app.use("/", require("./routes/root"));
 
 
 
-
+//fix issue of css not sending as well as html - probably in the root.js and server.js
+//that is the main cause of this issue
 app.all("*", (req, res) => {
     res.status(404)
     if (req.accepts("html")) {

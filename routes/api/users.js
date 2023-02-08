@@ -4,13 +4,13 @@ const router = express.Router();
 
 
 router.route("/")
-    .get(employeeController.getAllEmployees)
-    .post(employeeController.createNewEmployee)
-    .put(employeeController.updateEmployee)
-    .delete(employeeController.deleteEmployee);
+    .get(userController.getAllUsers)
+    .post(userController.createNewUser)
+    .put(userController.updateUser)
+    .delete(userController.deleteUser);
 
 router.route("/:id")
-    .get(employeeController.getEmployee);
+    .get(userController.getUser);
 
 
 module.exports = router;

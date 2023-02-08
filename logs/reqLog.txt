@@ -32,3 +32,58 @@
 20230123	18:51:11	388c1d81-0708-4f0c-8064-334d6d2015c3	GET	undefined	/
 20230123	18:51:11	0e074583-8447-4555-a432-8e349e877ef4	GET	undefined	/login
 20230123	18:51:12	ef73482d-fc97-488b-b4b7-6e26a22f6d01	GET	undefined	/public/css/login.css
+20230208	09:13:12	e7cb2821-9c27-4aad-be64-29f343c7242e	GET	undefined	/
+20230208	09:13:12	d64907ff-4e8c-40d5-9651-e1cfa36923fa	GET	undefined	/public/css/index.css
+20230208	09:13:12	2e87975f-df5d-424d-a093-e05ddddade2b	GET	undefined	/public/js/index.js
+20230208	09:13:47	c1d1bdc8-5a43-4cb4-86ea-3a63becdcf2a	GET	undefined	/
+20230208	09:13:47	45eb9ffc-9072-458e-b398-c948603c73f0	GET	undefined	/public/css/index.css
+20230208	09:13:47	8d4c411c-a606-4f6a-bb4c-51722a616fd4	GET	undefined	/public/js/index.js
+20230208	09:15:32	7f516a3f-ca89-43d4-9326-26c523252fbd	GET	undefined	/
+20230208	09:15:32	1399144b-715a-4d5c-a5e2-1ecdb56bc48e	GET	undefined	/public/css/index.css
+20230208	09:15:33	c2ea6c0f-07ea-43f7-8010-93c6c4b0852e	GET	undefined	/public/js/index.js
+20230208	09:16:19	e03061df-6277-46a5-a2a0-938ef0a9cd8d	GET	undefined	/
+20230208	09:16:19	c0f90bc6-4e1c-4aad-b49e-4e37b7d82b15	GET	undefined	/public/css/index.css
+20230208	09:16:20	5dd15f9c-d33b-48b9-b07e-734a0e54345c	GET	undefined	/public/js/index.js
+20230208	09:17:06	169e1af5-e7f7-44e7-b384-9ae31c64f25d	GET	undefined	/
+20230208	09:17:06	035610f0-ae24-42f6-aa87-a2ca7de3c4df	GET	undefined	/public/css/index.css
+20230208	09:17:06	9e581144-7b39-4220-b31f-52ed3227fe7e	GET	undefined	/public/js/index.js
+20230208	09:17:24	ef93c7d6-7e6b-4eed-be75-b88c4f60e486	GET	undefined	/
+20230208	09:17:24	c5b31926-3714-44bb-b847-995d4f46c7af	Error: Error
+20230208	09:17:24	9923cadd-c0ed-4061-9602-23c66c62f0d8	GET	undefined	/
+20230208	09:17:24	17d886c4-6101-4e03-8c9d-c8cc18b54c7d	Error: Error
+20230208	09:17:40	69ff2d3e-9675-4398-9849-7115c1155512	GET	undefined	/
+20230208	09:17:40	51ecef05-29ad-4eae-8a33-bc3cb876e88a	Error: Error
+20230208	09:17:40	1883afd6-03c0-4e0c-9ac5-ba564ec09b06	GET	undefined	/
+20230208	09:17:40	69020950-90a4-41a6-ac3b-19779fa5620e	Error: Error
+20230208	09:17:42	a99fe6f2-ec75-4ff5-9af1-eb340a7f40b4	GET	undefined	/
+20230208	09:17:42	70840613-924b-4fbe-b178-7d895b1f2c83	Error: Error
+20230208	09:17:42	d002ce8a-ef2f-47f1-8f72-f20f14aa36f5	GET	undefined	/
+20230208	09:17:42	a107a86e-2d42-4cdd-865f-f99298eedb56	Error: Error
+20230208	09:18:10	93ce55c3-2b05-4bb0-9eca-309a8df2a8ff	OPTIONS	undefined	*
+20230208	09:18:10	6230b8c0-f2b0-4f7a-9682-75f4a81d551d	GET	undefined	/
+20230208	09:18:10	72f71420-91fb-47f0-b98e-815c28da607b	Error: Error
+20230208	09:18:13	08f0b303-2388-42b2-a084-e64b49fe1d72	OPTIONS	undefined	*
+20230208	09:18:13	d09a5de8-8ec7-474b-ac30-0c6b32fcf535	GET	undefined	/
+20230208	09:18:13	b48cc431-d29e-4b58-9acf-5cc0ed44c818	Error: Error
+20230208	09:18:13	6c8c4645-9c0a-44f4-affd-6bc6ee86c6d7	GET	undefined	/
+20230208	09:18:13	8ddd78c9-0d2b-4be5-ba5b-614ec24412a6	Error: Error
+20230208	09:18:47	1422d9b2-1a35-4959-b08f-58136168fdb6	OPTIONS	undefined	*
+20230208	09:18:47	8a90da0a-5b37-4f31-b62a-9e6e77db3d8a	GET	undefined	/
+20230208	09:18:47	7863f890-7b5a-48ab-80bb-9519fa438455	TypeError: TypeError
+20230208	09:18:48	69d43500-3f9d-4988-8491-124d666afb91	GET	undefined	/
+20230208	09:18:48	97df9cbe-9b7e-45e2-b389-b94790e1aedb	TypeError: TypeError
+20230208	09:19:13	db4c8ed0-47f7-4df4-9c76-1088d7b2014e	OPTIONS	undefined	*
+20230208	09:19:13	01a68234-9cef-4363-a264-ccaa8a9a22d1	GET	undefined	/
+20230208	09:19:14	6e38a286-1949-431c-a48d-b0b4e5560eb8	GET	undefined	/public/js/index.js
+20230208	09:19:14	bbf7f639-5a68-422b-8e73-7721bc8dae45	GET	undefined	/public/css/index.css
+20230208	09:19:40	95cfea17-0d07-4000-9f0c-26358307c30c	OPTIONS	undefined	*
+20230208	09:19:40	ec7da157-e3fa-4e12-bf51-2de1cdb5778c	GET	undefined	/
+20230208	09:19:40	5b44f0ce-2006-4e97-8598-1f014174827b	Error: Error
+20230208	09:19:40	a52586fe-b5fd-4222-a95e-b3a8d01ff36f	GET	undefined	/
+20230208	09:19:40	d880e9a2-c19f-4490-b618-5e5a131b0828	Error: Error
+20230208	09:19:52	5869f857-ea0f-4377-8342-86264adbe7e7	GET	undefined	/
+20230208	09:19:53	e9b12b29-e22c-4e73-b204-6af097defda0	GET	undefined	/public/css/index.css
+20230208	09:19:53	ade2a95b-6e8a-4a61-92bc-e794df7988d0	GET	undefined	/public/js/index.js
+20230208	09:20:08	3072861c-1530-4555-96b9-eac2c2a1bf0b	GET	undefined	/
+20230208	09:20:08	e6ec8a98-7e34-49d0-840a-6e764579cdaa	GET	undefined	/public/js/index.js
+20230208	09:20:08	b1302611-e253-44dd-8a01-64bbb655a670	GET	undefined	/public/css/index.css
