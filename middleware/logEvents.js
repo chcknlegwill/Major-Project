@@ -42,7 +42,7 @@ const logger = ((req, res, next) => {
 });
 */
 
-/* below code is just to test out these modules
+/* below code is just to test out modules (uuid, date-nfs)
 console.log(format(new Date(), "yyyyMMdd\tHH:mm:ss"))
 
 console.log(uuid())

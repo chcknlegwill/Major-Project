@@ -7,29 +7,32 @@
 	<meta name="viewport" content="width=device-width" ; initial-scale="1.0" />
 	<link rel="stylesheet" href="/public/css/login.css">
 	<link rel="icon" href="/public/img/cinema.png">
-
+	<script src="/public/js/login.js" defer></script>
 
 </head>
 
 <body>
 	<div class="content">
 		<div class="login-master">
-			<div class="login-container">
-				<div class="username-cont">
-					<input id="username" class="username-input" type="text" placeholder="username" name="username">
-				</div>
-				<div class="password-cont">
-					<input id="password" class="password-input" type="password" placeholder="password" name="password">
-				</div>
-				<button>login</button>
+			<!--space here for development purposes-->
+			<form id="login-form" class="login-container">
+				<input id="username" autocomplete="off" class="username-input" type="text" placeholder="username" name="username"> <!--autocomplete="off"-->
+				
+				<input id="password" class="password-input" type="password" placeholder="password" name="password">
+				<button type="submit" value="submit">login</button>
 				<loading></loading>
 				<output id="output"></output>
-			</div>
+				<div class="register" >
+					<a>No account? </a>
+					<a id="reg" href="/register">register</a>
+				</div>
+			</form>
+			<!--space here for easier separation of the form-->
 		</div>
 	</div>
 	<footer>
 		<div class="footer-content">
-			<a> © cinema.bond - v0.1.0</a>
+			<a> © cinema.bond - v0.2.0</a>
 		</div>
 	</footer>
 </body>

@@ -94,8 +94,46 @@ button:hover {
   color: #fff;
 }
 
+#reg {
+  margin: 0;
+  font-size: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 108, 1, 1) 0%,
+    rgba(230, 241, 14, 1) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-shadow: 0px 0px 3vh rgba(254, 196, 6, 2);
+  /* text-shadow: 0px 0px 10vh rgba(254, 196, 6, 0.8); */
+}
+
+#reg:hover {
+  transition: all 0.01s ease-in-out;
+  text-shadow: 0px 0px 4vh rgba(254, 196, 6, 2);
+}
+
+
+
 output {
   color: #b70000;
+}
+
+.reg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+a {
+  color: #c2c2c2ed;
+  text-decoration: none;
 }
 
 footer {

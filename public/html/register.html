@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Register - cinema.bond</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" ; initial-scale="1.0" />
+	<link rel="stylesheet" href="/public/css/register.css">
+	<link rel="icon" href="/public/img/cinema.png">
+	<script src="/public/js/register.js" defer></script>
+
+</head>
+
+<body>
+	<div class="content">
+		<div class="login-master">
+			<!--space here for development purposes-->
+			<form id="login-form" class="login-container">
+				<input id="username" autocomplete="off" class="username-input" type="text" placeholder="username" name="username"> <!--autocomplete="off"-->
+				
+				<input id="password" class="password-input" type="password" placeholder="password" name="password">
+                <input id="special_Phrase" class="password-input" typr="password" autocomplete="off" name="phrase" placeholder="special phrase">
+				<button type="submit" value="submit">register</button>
+				<loading></loading>
+				<output id="output"></output>
+			</form>
+			<!--space here for easier separation of the form-->
+		</div>
+	</div>
+	<footer>
+		<div class="footer-content">
+			<a> © cinema.bond - v0.2.0</a>
+		</div>
+	</footer>
+</body>
+
+</html>
