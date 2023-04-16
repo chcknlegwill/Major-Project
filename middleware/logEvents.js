@@ -1,5 +1,5 @@
 const { format } = require("date-fns");
-const { v4: uuid } = require("uuid"); //imports specific version (v4) of uuid
+const { v4: uuid } = require("uuid"); //imports specific version (v4) of uuid - dont need this
 
 const fs = require("fs");
 const fsPromises = require("fs").promises; //have to import fsPromises because the dir may not exists
@@ -20,6 +20,9 @@ const logEvents = async (message) => {
 		console.log(err);
 	};
 };
+//dont need uuid in this log file - need to change this.
+
+
 
 //         await fsPromises.appendFile(path.join(__dirname, "..", "logs", "eventLog.txt"), logItem);
 // above is a scrap incase this doesnt work -> only temporary

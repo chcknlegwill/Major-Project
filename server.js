@@ -52,11 +52,6 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "/")));
 
-//users will have to login first, therefore this redirect is here,
-//it will be a if, else statement soon because authentication is needed for accounts.
-app.get("/", (req, res) => {
-    res.status(301).redirect("/login");
-});
 
 app.get("/login", (req, res) => {
     res.status(200).sendFile("./public/html/login.html", { root: __dirname });
@@ -80,9 +75,17 @@ app.post("api/register", async (req, res) => {
 
 
 
-//404 goes at the end of all the other requests.
+//fix issue of css not sending as well as html - probably in the root.js and server.js
+//that is the main cause of this issue
 app.all("*", (req, res) => {
-    res.status(404).sendFile("./public/html/404.html", { root: __dirname });
+    res.status(404)
+    if (req.accepts("html")) {
+        res.sendFile(path.join(__dirname, "public", "html", "404.html"));
+    } else if (req.accepts("json")) {
+        res.json({error: "404 Not Found"})
+    } else {
+        res.type("txt").send("404 Not Found")
+    }
 });
 
 //16:14
