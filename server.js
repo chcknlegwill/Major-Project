@@ -42,7 +42,7 @@ async function run() {
 const PORT = process.env.PORT || 9000; //port server is listening on.
 
 run().catch(console.dir);
-
+mongoose.connect(uri)
 app.use(logger);
 //^ this is much more easily read than importing the logger from /middleware
 
