@@ -2,7 +2,6 @@ require("dotenv").config(); //required for...
 const express = require("express");//required for...
 const app = express();//required for...
 const path = require("path");//required for...
-const bodyParser = require("body-parser");//required for...
 const mongoose = require("mongoose");//required for...
 const user = require("./model/user");
 const { MongoClient, ServerApiVersion } = require("mongodb")
@@ -10,17 +9,19 @@ const { MongoClient, ServerApiVersion } = require("mongodb")
 
 //custom middleware 'imports' start here
 const { logger } = require("./middleware/logEvents");
-const { compare } = require("bcrypt");
+const { compare, compareSync } = require("bcrypt");
 //custom middleware imports end here
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
 
 //mongoDB init
-const uri = "mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority" //process.env.MONGODB;
+mongoose.set('strictQuery', false);
+const uri = ("mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority") //process.env.MONGODB;
 const client = new MongoClient (uri, {
     serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
         deprecationErrors: true,
+        
     }
 });
 
@@ -37,7 +38,8 @@ async function run() {
     }
 }
 
-//mongoose.connect()
+mongoose.connect(uri);
+
 
 const PORT = process.env.PORT || 9000; //port server is listening on.
 
@@ -47,20 +49,18 @@ app.use(logger);
 //^ this is much more easily read than importing the logger from /middleware
 
 app.use(express.json());
-app.use(bodyParser.json());
 
 
 app.use(express.static(path.join(__dirname, "/")));
 
+app.use("/", require("./routes/root.js"))
 
 app.get("/login", (req, res) => {
     res.status(200).sendFile("./public/html/login.html", { root: __dirname });
 });//NEED to route this to the main server
 
-app.post("/api/login", async (req, res) => {
-    console.log(req.body);
-    res.json({ status: 200 });
-})
+
+app.use("/api/login", require("./routes/login"));
 //^ organise these into routes as soon as its functional
 
 app.get("/register", (req, res) => {
@@ -93,4 +93,5 @@ console.log(__dirname);
 
 app.listen(PORT, () => {
 	console.log(`Server running on port: ${PORT}`);
+    console.log(process.env.MONGO_URI);
 });

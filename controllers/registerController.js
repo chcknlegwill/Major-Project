@@ -1,7 +1,8 @@
 const usersDB = {
     users: require('../model/users.json'),
     setUsers: function (data) { this.users = data }
-}//this will be a database connect command, not a file.
+}//this will be a database connect command, not a file.]
+//it's a local file just for development purposes
 
 const fsPromises = require('fs').promises;
 const path = require('path');

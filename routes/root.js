@@ -3,11 +3,9 @@ const router = express.Router();
 const path = require("path");
 
 
-router.get("^/$|/index(.html)?", (req, res) => {
-    //res.sendFile("..","./public/css/index.html", { root: __dirname });
-    res.sendFile(path.join(__dirname, "..", "public", "html", "index.html"));
+router.get('/', (req, res) => {
+    res.redirect(301, "/login");
 });
 
-console.log(__dirname)
 
 module.exports = router;

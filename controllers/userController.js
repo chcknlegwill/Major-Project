@@ -1,12 +1,48 @@
-const { parse } = require("date-fns");
+//const { parse } = require("date-fns");
 
 const data = {
     user:require("../model/users.json"),
     setUsers: function (data) {this.users = data}
 }
 
+
+//get this working like in the other thingymagig
+
 const getAllUsers = (req, res) => {
-    res.json(data.users);
+    res.json(data.users)
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//const { parse } = require("date-fns");
+
+const data = {
+    user:require("../model/users.json"),
+    setUsers: function (data) {this.users = data}
+}
+
+
+const getAllUsers = (req, res) => {
+    res.json(data.users)
 };
 
 
@@ -65,5 +101,5 @@ module.exports = {
     deleteUser,
     getUser
 };
-
+*/
 //3:36
