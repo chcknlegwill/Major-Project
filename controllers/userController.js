@@ -3,10 +3,10 @@ const { parse } = require("date-fns");
 const data = {
     user:require("../model/users.json"),
     setUsers: function (data) {this.users = data}
-}
+} //This is a local database for testing.
 
 const getAllUsers = (req, res) => {
-    res.json(data.users);
+    res.json(data.users)
 };
 
 

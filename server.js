@@ -10,12 +10,12 @@ const { MongoClient, ServerApiVersion } = require("mongodb")
 
 //custom middleware 'imports' start here
 const { logger } = require("./middleware/logEvents");
-const { compare } = require("bcrypt");
+const { compare, compareSync } = require("bcrypt");
 //custom middleware imports end here
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
-
+/*
 //mongoDB init
-const uri = "mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority" //process.env.MONGODB;
+//const uri = ("mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority") //process.env.MONGODB;
 const client = new MongoClient (uri, {
     serverApi: {
         version: ServerApiVersion.v1,
@@ -37,11 +37,12 @@ async function run() {
     }
 }
 
-//mongoose.connect()
+mongoose.connect()
+*/
 
 const PORT = process.env.PORT || 9000; //port server is listening on.
 
-run().catch(console.dir);
+//run().catch(console.dir);
 
 app.use(logger);
 //^ this is much more easily read than importing the logger from /middleware
@@ -52,6 +53,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "/")));
 
+app.use("/", require("./routes/root.js"))
 
 app.get("/login", (req, res) => {
     res.status(200).sendFile("./public/html/login.html", { root: __dirname });
@@ -93,4 +95,5 @@ console.log(__dirname);
 
 app.listen(PORT, () => {
 	console.log(`Server running on port: ${PORT}`);
+    console.log(process.env.MONGO_URI);
 });
