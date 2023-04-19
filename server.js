@@ -14,10 +14,6 @@ const { compare, compareSync } = require("bcrypt");
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
 
 //mongoDB init
-<<<<<<< HEAD
-mongoose.set('strictQuery', false);
-=======
->>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 const uri = ("mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority") //process.env.MONGODB;
 const client = new MongoClient (uri, {
     serverApi: {
@@ -41,12 +37,7 @@ async function run() {
     }
 }
 
-<<<<<<< HEAD
-mongoose.connect(uri);
-
-=======
 //mongoose.connect()
->>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 
 const PORT = process.env.PORT || 9000; //port server is listening on.
 
@@ -69,17 +60,12 @@ app.get("/login", (req, res) => {
     res.status(200).sendFile("./public/html/login.html", { root: __dirname });
 });
 
-<<<<<<< HEAD
-
-app.use("/api/login", require("./routes/login"));
-=======
 //app.use("/login", require("./routes/login");
 
 //app.post("/api/login", async (req, res) => {
 //    console.log(req.body);
 //    res.json({ status: 200 });
 //})
->>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 //^ organise these into routes as soon as its functional
 
 //app.use("/register", require("./routes/register"));

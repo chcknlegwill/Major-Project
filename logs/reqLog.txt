@@ -156,3 +156,8 @@
 20230419	13:49:51	b152b2bb-3940-4e30-95a9-ce0aa50af9f6	POST	http://localhost:9000	/login
 20230419	13:50:17	b77714e1-277e-4c73-98c0-60d07f04588a	POST	http://localhost:9000	/login
 >>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
+20230419	21:46:31	647aeb85-92ac-4e9d-8a7e-dcacc1f30a1a	GET	undefined	/login
+20230419	21:46:31	45e1d7f5-4414-4f0a-aaf5-29f7483a628b	GET	undefined	/public/css/login.css
+20230419	21:46:31	6c12d926-7586-4d43-a23b-58c0c1010449	GET	undefined	/public/js/login.js
+20230419	21:46:32	121afe53-8179-4cb5-8492-287f6f2d3895	GET	undefined	/public/img/cinema.png
+20230419	21:46:36	48361a3e-50e0-4d27-a5a8-7e23a7f02596	POST	http://localhost:9000	/login

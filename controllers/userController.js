@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 //const { parse } = require("date-fns");
-=======
 
 
 const registerUser = async (req, res, user) => {
@@ -16,7 +14,6 @@ module.exports = {
 
 /*
 const { parse } = require("date-fns");
->>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 
 const data = {
     user:require("../model/users.json"),
@@ -119,10 +116,5 @@ module.exports = {
     deleteUser,
     getUser
 };
-<<<<<<< HEAD
-*/
-//3:36
-=======
 
 */
->>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
