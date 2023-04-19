@@ -4,7 +4,7 @@ const app = express();//required for...
 const path = require("path");//required for...
 const mongoose = require("mongoose");//required for...
 const user = require("./model/user");
-const { MongoClient, ServerApiVersion } = require("mongodb")
+const { MongoClient, ServerApiVersion } = require("mongodb");
 
 
 //custom middleware 'imports' start here
@@ -14,7 +14,10 @@ const { compare, compareSync } = require("bcrypt");
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
 
 //mongoDB init
+<<<<<<< HEAD
 mongoose.set('strictQuery', false);
+=======
+>>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 const uri = ("mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority") //process.env.MONGODB;
 const client = new MongoClient (uri, {
     serverApi: {
@@ -38,8 +41,12 @@ async function run() {
     }
 }
 
+<<<<<<< HEAD
 mongoose.connect(uri);
 
+=======
+//mongoose.connect()
+>>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 
 const PORT = process.env.PORT || 9000; //port server is listening on.
 
@@ -53,15 +60,30 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "/")));
 
-app.use("/", require("./routes/root.js"))
+app.use("/", require("./routes/root.js"));
+//^- very simple redirect to /login - need to change it checks JWT
+
+app.use("/login", require("./routes/login.js"));    
 
 app.get("/login", (req, res) => {
     res.status(200).sendFile("./public/html/login.html", { root: __dirname });
-});//NEED to route this to the main server
+});
 
+<<<<<<< HEAD
 
 app.use("/api/login", require("./routes/login"));
+=======
+//app.use("/login", require("./routes/login");
+
+//app.post("/api/login", async (req, res) => {
+//    console.log(req.body);
+//    res.json({ status: 200 });
+//})
+>>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 //^ organise these into routes as soon as its functional
+
+//app.use("/register", require("./routes/register"));
+//^use this once the app is fully working
 
 app.get("/register", (req, res) => {
     res.status(200).sendFile("./public/html/register.html", { root: __dirname });
@@ -75,8 +97,6 @@ app.post("api/register", async (req, res) => {
 
 
 
-//fix issue of css not sending as well as html - probably in the root.js and server.js
-//that is the main cause of this issue
 app.all("*", (req, res) => {
     res.status(404)
     if (req.accepts("html")) {
@@ -88,7 +108,6 @@ app.all("*", (req, res) => {
     }
 });
 
-//16:14
 console.log(__dirname);
 
 app.listen(PORT, () => {

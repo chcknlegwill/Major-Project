@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 //const { parse } = require("date-fns");
+=======
+
+
+const registerUser = async (req, res, user) => {
+    console.log(req.body.username, req.body.password);
+    return (req.body.username && req.body.password)
+}
+
+module.exports = {
+    registerUser
+};
+//THIS WORKS
+
+
+/*
+const { parse } = require("date-fns");
+>>>>>>> d7421b5 (v0.2.1, got routing / middleware working)
 
 const data = {
     user:require("../model/users.json"),
@@ -101,5 +119,10 @@ module.exports = {
     deleteUser,
     getUser
 };
+<<<<<<< HEAD
 */
 //3:36
+=======
+
+*/
+>>>>>>> d7421b5 (v0.2.1, got routing / middleware working)

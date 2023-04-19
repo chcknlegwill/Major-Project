@@ -1,7 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const registerController = require("../controllers/registerController");
+const path = require("path");
+const userController = require("../controllers/userController");
 
-router.post("/", registerController.handleNewUser);
+router.get("/", (req, res) => {
+res.sendFile(path.join(__dirname, "..", "public", "html", "register.html"))
+})
+
+router.post("/", userController.registerUser());
+
+//router.post("/", registerController.handleNewUser);
+
 
 module.exports = router;

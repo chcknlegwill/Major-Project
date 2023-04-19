@@ -13,7 +13,7 @@ async function handleSubmit(event) {
   //  return (null);
   //}
 
-  const result = await fetch("/api/login", {
+  const result = await fetch("/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

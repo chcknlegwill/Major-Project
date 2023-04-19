@@ -14,7 +14,7 @@ async function handleSubmit(event) {
   //  return (null);
   //}
 
-  const result = await fetch("/api/register", {
+  const result = await fetch("/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -30,6 +30,6 @@ async function handleSubmit(event) {
 
 const form = document.querySelector("form");
 
-form.addEventListener("submit", handleSubmit);
+form?.addEventListener("submit", handleSubmit);
 //^this error does not mean anthing:
 //it thinks that "form" may be null, but its clearly not.
