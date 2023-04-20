@@ -12,7 +12,9 @@ const { logger } = require("./middleware/logEvents");
 const { compare, compareSync } = require("bcrypt");
 //custom middleware imports end here
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
+const PORT = process.env.PORT || 9000; //port server is listening on.
 
+/*
 //mongoDB init
 const uri = ("mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority") //process.env.MONGODB;
 const client = new MongoClient (uri, {
@@ -39,10 +41,14 @@ async function run() {
 
 //mongoose.connect()
 
-const PORT = process.env.PORT || 9000; //port server is listening on.
 
+
+mongoose.set('strictQuery', false);
 run().catch(console.dir);
 mongoose.connect(uri)
+
+*/
+
 app.use(logger);
 //^ this is much more easily read than importing the logger from /middleware
 
