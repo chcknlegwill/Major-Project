@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const path = require("path");
-const bodyParser = require("body-parser");
 const loginController = require("../controllers/userController");
 
 router.get("/", (req, res) => {
@@ -9,7 +8,7 @@ router.get("/", (req, res) => {
 });
 
 
-router.post("/", loginController.registerUser, (req, res) => {
+router.post("/", loginController.loginUser, (req, res) => {
     console.log("post req sent from routes/login")
 });
 module.exports = router;

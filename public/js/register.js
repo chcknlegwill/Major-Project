@@ -28,7 +28,7 @@ async function handleSubmit(event) {
   console.log(result)
 };
 
-const form = document.querySelector("form");
+const form = document.querySelector("form"); 
 
 form?.addEventListener("submit", handleSubmit);
 //^this error does not mean anthing:

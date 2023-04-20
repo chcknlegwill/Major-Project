@@ -5,7 +5,7 @@ const out = document.getElementById("out");
 
 
 function btnRedirect(btn) {
-	window.location.href = "https://cinema.bond/";
+	window.location.href = "/";
 };
 
 //this should redirect users to https://cinema.bond/

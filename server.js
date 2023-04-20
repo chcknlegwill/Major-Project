@@ -60,13 +60,8 @@ app.use(express.static(path.join(__dirname, "/")));
 app.use("/", require("./routes/root.js"));
 //^- very simple redirect to /login - need to change it checks JWT
 
-app.use("/login", require("./routes/login.js"));    
+app.use("/login", require("./routes/login"));    
 
-app.get("/login", (req, res) => {
-    res.status(200).sendFile("./public/html/login.html", { root: __dirname });
-});
-
-//app.use("/login", require("./routes/login");
 
 //app.post("/api/login", async (req, res) => {
 //    console.log(req.body);
