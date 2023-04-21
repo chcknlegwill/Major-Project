@@ -60,14 +60,8 @@ app.use(express.static(path.join(__dirname, "/")));
 app.use("/", require("./routes/root.js"));
 //^- very simple redirect to /login - need to change it checks JWT
 
-app.use("/login", require("./routes/login"));    
+app.use("/login", require("./routes/login.js"));    
 
-
-//app.post("/api/login", async (req, res) => {
-//    console.log(req.body);
-//    res.json({ status: 200 });
-//})
-//^ organise these into routes as soon as its functional
 
 //app.use("/register", require("./routes/register"));
 //^use this once the app is fully working
@@ -80,8 +74,6 @@ app.post("api/register", async (req, res) => {
     console.log(req.body, "this is from POST /api/register");
     res.json({ status: 200 });
 })
-
-
 
 
 app.all("*", (req, res) => {
