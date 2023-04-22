@@ -14,7 +14,7 @@ const { compare, compareSync } = require("bcrypt");
 //const { connection } = require("./middleware/sql"); I will be adding this in when I get the database running
 const PORT = process.env.PORT || 9000; //port server is listening on.
 
-/*
+/*  //due to school network
 //mongoDB init
 const uri = ("mongodb+srv://chcknlegwill:5gFyKJz71mHrbGPg@cluster0.fmg8jy2.mongodb.net/?retryWrites=true&w=majority") //process.env.MONGODB;
 const client = new MongoClient (uri, {
@@ -63,12 +63,10 @@ app.use("/", require("./routes/root.js"));
 app.use("/login", require("./routes/login.js"));    
 
 
-//app.use("/register", require("./routes/register"));
+app.use("/register", require("./routes/register.js"));
 //^use this once the app is fully working
 
-app.get("/register", (req, res) => {
-    res.status(200).sendFile("./public/html/register.html", { root: __dirname });
-})
+
 
 app.post("api/register", async (req, res) => {
     console.log(req.body, "this is from POST /api/register");

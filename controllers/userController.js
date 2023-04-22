@@ -2,13 +2,11 @@
 
 
 const loginUser = async (req, res, user) => {
-    console.log("login" + req, req.body.username, req.body.password);
-    return (req.body.username && req.body.password)
+    console.log("login", req.body.username, req.body.password);
 }
 
 const registerUser = async (req, res, user) => {
     console.log("register" + req.body.username, req.body.password, req.body.specialPhrase);
-    return (req.body.username && req.body.password && req.body.specialPhrase)
 }
 
 module.exports = {

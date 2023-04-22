@@ -11,4 +11,5 @@ router.get("/", (req, res) => {
 router.post("/", loginController.loginUser, (req, res) => {
     console.log("post req sent from routes/login")
 });
+
 module.exports = router;

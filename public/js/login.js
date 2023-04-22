@@ -1,5 +1,5 @@
 
-async function handleSubmit(event) {
+async function handleSubmit(event) { //the error is that the default for submit is to send the date into the url
   event.preventDefault();
 
   const data = new FormData(event.target);
